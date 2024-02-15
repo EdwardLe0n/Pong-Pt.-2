@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
+
+    public AudioClip wallSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +22,10 @@ public class Ball : MonoBehaviour
     void OnCollisionEnter(Collision other)
     {
 
-
+        if (other.gameObject.tag == "Wall")
+        {
+            gameObject.GetComponent<AudioSource>().PlayOneShot(wallSound, 5f);
+        }
 
     }
 }

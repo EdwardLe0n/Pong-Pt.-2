@@ -480,6 +480,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7746d35e5a54d4b4ea56a5c5bc5ae9d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wallSound: {fileID: 8300000, guid: 51e19d616667cf24f916e38f7e4b0258, type: 3}
 --- !u!1 &178686731
 GameObject:
   m_ObjectHideFlags: 0
@@ -961,7 +962,7 @@ GameObject:
   - component: {fileID: 885443440}
   m_Layer: 0
   m_Name: Bottom
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
